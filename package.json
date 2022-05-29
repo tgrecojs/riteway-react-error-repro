@@ -1,0 +1,39 @@
+{
+  "name": "nextjs-riteway-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "next",
+    "dev": "next",
+    "start": "next start",
+    "lint": "eslint ./source",
+    "test": "riteway -r @babel/register 'source/index.test.js' | tap-nirvana",
+    "test:watch": "watch 'npm run -s test' ./source"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^12.1.6",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@ava/babel": "^2.0.0",
+    "@babel/core": "^7.18.2",
+    "@babel/register": "^7.17.7",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.16.0",
+    "eslint-config-next": "^12.1.6",
+    "eslint-plugin-react": "^7.30.0",
+    "esm": "^3.2.25",
+    "postcss": "^8.4.14",
+    "riteway": "^6.3.1",
+    "tailwindcss": "^3.0.24",
+    "tap-nirvana": "^1.1.0",
+    "tape": "^5.5.3",
+    "watch": "^0.13.0"
+  }
+}
